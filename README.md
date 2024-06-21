@@ -23,8 +23,8 @@
 1. In App.jsx (or Main.jsx), add <Route path="/" element={<Home/>}/>
 1. In App.jsx (or Main.jsx), add <Route path="/componentA" element={<ComponentA/>}/> 
 1. In App.jsx (or Main.jsx), add <Route path="/componentA/:id" element={<ComponentADetails/>}/> 
-1. In Nav.jsx, add <Link to="/"><h2>Home </h2></Link>
-1. In Nav.jsx, add <Link to="/componentA"><h2>Component A</h2></Link>
+1. In Nav.jsx, add <Link to="/"> <h 2> Home </h 2> </Link>
+1. In Nav.jsx, add <Link to="/componentA"> <h 2> Component A</h 2> </Link>
 
 ## Hooks and State and Effect
 1. In App.jsx, add import { useState, useEffect } from 'react'
