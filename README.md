@@ -17,9 +17,9 @@
 ## router-react
 1. npm install react-router-dom
 1. In main.jsx, add import { BrowserRouter } from 'react-router-dom'
-1. In main.jsx, add  <React.StrictMode> and <BrowserRouter> before and after <App/>
-1. In App.jsx, add import {Route, Routes} from 'react-router-dom'
-1. In App.jsx (or Main.jsx), add <Routes> //routes go here// <Routes/>
+1. In main.jsx, add  < React . StrictMode > and < BrowserRouter > before and after < A p p/>
+1. In App.jsx (or Main.jsx), add import {Route, Routes} from 'react-router-dom'
+1. In App.jsx (or Main.jsx), add <Routes> //routes go here// </Routes>
 1. In App.jsx (or Main.jsx), add <Route path="/" element={<Home/>}/>
 1. In App.jsx (or Main.jsx), add <Route path="/componentA" element={<ComponentA/>}/> 
 1. In App.jsx (or Main.jsx), add <Route path="/componentA/:id" element={<ComponentADetails/>}/> 
@@ -40,11 +40,12 @@
 1. include /node_modules and .DS_store in gitIgnore (optional)
 
 ## Mongoose and Express
+1. step out of react folder into project folder
 1. npm init -y //creates package.json
-1. npm install express //for controllers
+1. npm install express //creates package-lock.json and node modules
 1. npm install nodemon --save-dev
 1. npm install cors //for middleware
-1. npm install mongoose //creates and package-lock.json
+1. npm install mongoose 
 1. npm install body-parser //used to create and update json in thunder client
 1. npm install morgan //shows commands that are in command line
 Those steps will add these items:
@@ -57,7 +58,7 @@ Those steps will add these items:
 1. touch db/index.js 
 1. touch models/{modelA,modelB,index}.js 
 1. touch server.js
-1. touch controllers/{dogControllers,catController}/.js
+1. touch controllers/{dogControllers,catController}.js
 1. touch seed/initialData.js //create seed file
 1. node seed/initialData.js //to actually run the seed file
 1. add lines to server.js
