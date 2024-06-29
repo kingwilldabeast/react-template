@@ -3,13 +3,16 @@ import { useNavigate } from "react-router-dom"
 export default function Form (props) {
 
   let navigate = useNavigate()
-  const [newBoat, setNewBoat] = useState({
+  const [boatInProgress, setBoatInProgress] = useState({
     id: '',
     name: '',
     img: '',
     description: '',
     price: ''
   })
+
+  const [inputInProgress, setInputInProgress] = useState({ searchBar: '' });
+
   
   const handleSubmit = (e) => {
     props.addBoat(e)
@@ -17,7 +20,7 @@ export default function Form (props) {
   }
 
   const handleChange = (e) => {
-    setNewBoat({ ...newBoat, [e.target.name]: e.target.value })
+    setInputInProgress({ ...inputInProgress, [e.target.name]: e.target.value })
   }
 
   return (
