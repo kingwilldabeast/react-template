@@ -42,15 +42,14 @@
 ## Mongoose and Express
 1. step out of react folder into project folder
 1. npm init -y //creates package.json
+1. npm install express cors mongoose body-parser morgan nodemon --save-dev //all at once, or separate:
 1. npm install express //creates package-lock.json and node modules
-1. npm install nodemon --save-dev
 1. npm install cors //for middleware
 1. npm install mongoose 
 1. npm install body-parser //used to create and update json in thunder client
 1. npm install morgan //shows commands that are in command line
+1. npm install nodemon --save-dev
 Those steps will add these items:
-* file "package.json" **Note: Make sure it references the correct JS file of server.js not index.js**
-* file "package-lock.json"
 1. manually add to package.json **scripts**:  
 * "start":"node server.js",
 *  "dev":"nodemon server.js"

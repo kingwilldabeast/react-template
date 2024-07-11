@@ -18,4 +18,4 @@ module.exports = publisherSchema
 //ALTERNATE WITHOUT models/index.JS
 // const mongoose = require('mongoose')
 // const Publisher = mongoose.model('Publisher', publisherSchema)
-// module.exports = Publisher
+// module.exports = Publisher 

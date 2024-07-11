@@ -18,8 +18,13 @@ export default function BoatList (props) {
     <div className="boat-grid">
         <Link to ='/'>Back</Link>
       {
-      props.boats.map((boat) => (
-        <div className="boat-card" onClick={() => openBoatDetailPage(boat)} key={boat.id}>
+      props.boats.map((boat, index) => (
+        <div 
+        key = {index}
+        // key={boat.id}
+        className="boat-card" 
+        onClick={() => openBoatDetailPage(boat)} 
+        >
           <img style={{ display: 'block' }} src={boat.img} alt={boat.name} />
           <h3>{boat.name}</h3>
         </div>

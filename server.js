@@ -7,8 +7,9 @@ const app = express()
 app.use(cors());
 app.use(bodyParser.json())
 app.use(logger(`dev`))
+app.use(express.json())
 
-const db = require('./db')
+const db = require('./db') //mongoose data base from index.js file
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const PORT = process.env.PORT || 3001
