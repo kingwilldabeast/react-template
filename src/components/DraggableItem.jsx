@@ -1,4 +1,4 @@
-// DraggableItem.js
+// DraggableItem.jsx
 // npm install react-draggable
 import Draggable from 'react-draggable';
 
